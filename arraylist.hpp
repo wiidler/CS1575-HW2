@@ -30,6 +30,7 @@ void ArrayList<T>::shrink()
     {
         tmp[i] = m_data[i];
     }
+    delete[] m_data;
     m_data = tmp;
     m_max = maxSize;
     tmp = NULL;
